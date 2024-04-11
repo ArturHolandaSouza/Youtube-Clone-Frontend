@@ -65,7 +65,7 @@ function Header() {
                 {login?
                     <>
                         <ButtonContainer margin='0 0 0 10px' onClick={() => navigate('/login')}>
-                            {user.nome}
+                            {user.nome.charAt(0)}
                         </ButtonContainer>
                         <span onClick={() => logOut()}>Sair</span>
                     </>
